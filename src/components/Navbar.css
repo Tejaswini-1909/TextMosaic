@@ -1,0 +1,16 @@
+/* NAVBAR Dark Blue Theme */
+.navbar {
+  background-color: #0d2747 !important;
+  color: white !important;
+}
+
+.navbar a,
+.navbar-brand,
+.nav-link {
+  color: #d7e8ff !important;
+}
+
+.navbar a:hover,
+.nav-link:hover {
+  color: #4da3ff !important;
+}

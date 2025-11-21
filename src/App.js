@@ -1,0 +1,29 @@
+import React from 'react';
+import './App.css';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
+import 
+{ BrowserRouter as Router,
+   Routes,
+    Route,
+     } from 'react-router-dom';
+function App() {
+  return (
+    <>
+    <Router>
+      <Navbar title="TextMosaic" about="About us" />
+      <div className="container my-3">
+  <Routes>
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/" element={<TextForm heading="Enter your text below" />} />
+          </Routes>
+       
+      </div>
+      </Router>
+      
+    </>
+  );
+}
+
+export default App;
