@@ -88,12 +88,12 @@ export default function TextForm(props) {
         </div>
         {open.basic && (
           <div className="dropdown-box">
-            <button className="btn btn-custom-blue mx-2" onClick={handleClearClick}>🗑 Clear</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleClearClick}>🗑 Clear</button>
             <button className={`btn mx-2 ${copied ? 'btn-success' : 'btn-custom-blue'}`} onClick={handleCopyClick}>
               📋 {copied ? 'Copied!' : 'Copy'}
             </button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleUpClick}>🔠 Uppercase</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleLoClick}>🔡 Lowercase</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleUpClick}>🔠 Uppercase</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleLoClick}>🔡 Lowercase</button>
           </div>
         )}
 
@@ -103,10 +103,10 @@ export default function TextForm(props) {
         </div>
         {open.formatting && (
           <div className="dropdown-box">
-            <button className="btn btn-custom-blue mx-2" onClick={handleCapitalizeClick}>🔤 Capitalize Words</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleSentenceCaseClick}>📝 Sentence Case</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleExtraSpacesClick}>🚫 Extra Spaces</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleReverseClick}>🔁 Reverse</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleCapitalizeClick}>🔤 Capitalize Words</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleSentenceCaseClick}>📝 Sentence Case</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleExtraSpacesClick}>🚫 Extra Spaces</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleReverseClick}>🔁 Reverse</button>
           </div>
         )}
 
@@ -116,11 +116,11 @@ export default function TextForm(props) {
         </div>
         {open.advanced && (
           <div className="dropdown-box">
-            <button className="btn btn-custom-blue mx-2" onClick={handleSortWords}>🔀 Sort Words</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleRemoveNumbers}>🔢 Remove Numbers</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleRemoveSymbols}>🔣 Remove Symbols</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleRemoveDuplicateWords}>🧹 Unique Words</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleRemoveDuplicateLines}>📄 Unique Lines</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleSortWords}>🔀 Sort Words</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleRemoveNumbers}>🔢 Remove Numbers</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleRemoveSymbols}>🔣 Remove Symbols</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleRemoveDuplicateWords}>🧹 Unique Words</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleRemoveDuplicateLines}>📄 Unique Lines</button>
           </div>
         )}
 
@@ -130,8 +130,8 @@ export default function TextForm(props) {
         </div>
         {open.voice && (
           <div className="dropdown-box">
-            <button className="btn btn-custom-blue mx-2" onClick={handleSpeakClick}>🔊 Speak</button>
-            <button className="btn btn-custom-blue mx-2" onClick={handleSpeechToText}>🎤 Voice Input</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleSpeakClick}>🔊 Speak</button>
+            <button className="btn btn-custom-blue mx-2 my-2" onClick={handleSpeechToText}>🎤 Voice Input</button>
           </div>
         )}
 
@@ -141,7 +141,7 @@ export default function TextForm(props) {
         </div>
         {open.export && (
           <div className="dropdown-box">
-            <button className="btn btn-custom-outline mx-2" onClick={handleDownloadClick}>⬇ Download</button>
+            <button className="btn btn-custom-outline mx-2 my-2" onClick={handleDownloadClick}>⬇ Download</button>
           </div>
         )}
 
